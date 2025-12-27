@@ -17,4 +17,4 @@ jobs :
           extensions: nbstring, pdo_mysql, bcmath
 
       - name : Config env file
-        uses : php -r "file_exists('.env') || copy('.env.example' , '.env')"
+        run : php -r "file_exists('.env') || copy('.env.example' , '.env');"
